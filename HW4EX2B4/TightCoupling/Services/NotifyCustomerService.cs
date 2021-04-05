@@ -1,5 +1,6 @@
 using System;
 using System.Net.Mail;
+using HW4EX2B4.TightCoupling.Interfaces;
 using HW4EX2B4.Utility;
 
 namespace HW4EX2B4.TightCoupling.Model
@@ -11,8 +12,9 @@ namespace HW4EX2B4.TightCoupling.Model
             string customerEmail = cart.CustomerEmail;
             if (!String.IsNullOrEmpty(customerEmail))
             {
-                using (var message = new MailMessage("orders@somewhere.com", customerEmail))
-                using (var client = new SmtpClient("localhost"))
+                //using (var message = new MailMessage("orders@somewhere.com", customerEmail))
+                using (var message = Factory.CreateMail("orders@somewhere.com", customerEmail))
+                using (var client = Factory.CreateClient("localhost"))
                 {
                     message.Subject = "Your order placed on " + DateTime.Now;
                     message.Body = "Your order details: \n " + cart;

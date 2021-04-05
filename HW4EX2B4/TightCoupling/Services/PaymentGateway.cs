@@ -1,8 +1,9 @@
+using HW4EX2B4.TightCoupling.Interfaces;
 using System;
 
 namespace HW4EX2B4.TightCoupling.Services
 {
-    public class PaymentGateway : IDisposable
+    public class PaymentGateway : IPaymentGateway, IDisposable
     {
         public string CardNumber { get; set; }
         public string Credentials { get; set; }

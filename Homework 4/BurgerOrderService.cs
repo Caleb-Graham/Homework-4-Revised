@@ -37,62 +37,6 @@ namespace HW4EX1
         }
 
 
-        //public void orderBurger(int quantity)
-        //{
-        //    Console.WriteLine($"Received order for {quantity} burgers");
-        //}
 
-        //public void orderFries(int fries)
-        //{
-        //    throw new NotImplementedException("No fries in burger only order");
-        //}
-
-        //public void orderCombo(int quantity, int fries)
-        //{
-        //    throw new NotImplementedException("No combo in burger only order");
-        //}
     }
-
-
-    public interface IOrderBurger
-    {
-        void OrderNormalBurger(int quantity);
-    }
-
-    class OrderBurger : IOrderBurger
-    {
-        public void OrderNormalBurger(int quantity)
-        {
-            Console.WriteLine($"Received order for {quantity} burgers");
-        }
-    }
-
-
-    public interface IOrderFries
-    {
-        void orderFries(int fries);
-    }
-
-    class OrderFries : IOrderFries
-    {
-        public void orderFries(int fries)
-        {
-            throw new NotImplementedException("No fries in burger only order");
-        }
-    }
-
-
-    public interface IOrderCombo
-    {
-        void orderCombo(int quantity, int fries);
-    }
-
-    class OrderCombo : IOrderCombo
-    {
-        public void orderCombo(int quantity, int fries)
-        {
-            throw new NotImplementedException("No combo in burger only order");
-        }
-    }
-
 }

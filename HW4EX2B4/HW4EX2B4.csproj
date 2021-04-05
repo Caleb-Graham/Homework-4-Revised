@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TightCoupling\Interfaces\IInventorySystem.cs" />
+    <Compile Include="TightCoupling\Interfaces\IPaymentGateway.cs" />
     <Compile Include="TightCoupling\Model\Cart.cs" />
     <Compile Include="TightCoupling\Fakes\FakeNotifyCustomer.cs" />
     <Compile Include="TightCoupling\Fakes\FakePaymentProcessor.cs" />

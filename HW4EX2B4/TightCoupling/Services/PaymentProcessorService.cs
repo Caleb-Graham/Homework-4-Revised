@@ -1,4 +1,5 @@
 using System;
+using HW4EX2B4.TightCoupling.Interfaces;
 using HW4EX2B4.TightCoupling.Services;
 
 namespace HW4EX2B4.TightCoupling.Model
@@ -7,7 +8,7 @@ namespace HW4EX2B4.TightCoupling.Model
     {
         public void ChargeCard(PaymentDetails paymentDetails, decimal amount)
         {
-            using (var paymentGateway = new PaymentGateway())
+            using (IPaymentGateway paymentGateway = Factory.CreatePaymentGateway()) // Dependency removed. Newing up delegated to factory
             {
                 try
                 {
