@@ -10,7 +10,7 @@ namespace HW4EX2B4.TightCoupling.Model
 
         public Cart()
         {
-            this.Items = new List<OrderItem>();
+            Items = new List<OrderItem>();
         }
     }
 }

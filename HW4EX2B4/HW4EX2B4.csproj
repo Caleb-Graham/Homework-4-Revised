@@ -58,6 +58,8 @@
     <Compile Include="TightCoupling\Interfaces\IPaymentProcessor.cs" />
     <Compile Include="TightCoupling\Interfaces\IReserveInventory.cs" />
     <Compile Include="TightCoupling\Model\Factory.cs" />
+    <Compile Include="TightCoupling\Model\OnlineOrder.cs" />
+    <Compile Include="TightCoupling\Model\CashSales.cs" />
     <Compile Include="TightCoupling\Services\NotifyCustomerService.cs" />
     <Compile Include="TightCoupling\Model\Order.cs" />
     <Compile Include="TightCoupling\Model\OrderException.cs" />
