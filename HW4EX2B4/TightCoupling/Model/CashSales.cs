@@ -19,18 +19,11 @@ namespace HW4EX2B4.TightCoupling.Model
 
 
 
-        public void Checkout(bool notifyCustomer)
+        public override void Checkout()
         {
             if (_paymentDetails.PaymentMethod == PaymentMethod.Cash)
             {
                 _paymentProcessor.ChargeCash(_paymentDetails, _cart.TotalAmount);
-            }
-
-            _reserveInventory.ReserveInventory(_cart);
-
-            if (notifyCustomer)
-            {
-                _notifyCustomer.NotifyCustomer(_cart);
             }
         }
 

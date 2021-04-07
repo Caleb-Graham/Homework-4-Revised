@@ -11,5 +11,11 @@ namespace HW4EX2B4.TightCoupling.Model
             amountPassed = amount;
 
         }
+
+        public void ChargeCash(PaymentDetails paymentDetails, decimal amount)
+        {
+            wasCalled = true;
+            amountPassed = amount;
+        }
     }
 }

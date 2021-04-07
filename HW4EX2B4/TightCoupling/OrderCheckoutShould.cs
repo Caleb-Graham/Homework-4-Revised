@@ -1,13 +1,14 @@
-﻿using HW4EX2B4.TightCoupling.Model;
+﻿using HW4EX2B4.TightCoupling.Fakes;
+using HW4EX2B4.TightCoupling.Model;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HW4EX2B4.TightCoupling
 {
     [TestClass]
     public class OrderCheckoutShould
-        
+
     {
-       
+
         [TestMethod]
         public void NotFailWithNoItemsNoNotificationCreditCard()
         {
@@ -15,10 +16,10 @@ namespace HW4EX2B4.TightCoupling
             var reservationService = new FakeReserveInventory();
             var paymentService = new FakePaymentProcessor();
             var notificationService = new FakeNotifyCustomer();
-            var paymentDetails = new PaymentDetails() {PaymentMethod = PaymentMethod.CreditCard};
+            var paymentDetails = new PaymentDetails() { PaymentMethod = PaymentMethod.CreditCard };
 
             var cart = new Cart();
-            var order = new Order(cart,paymentDetails,notificationService,reservationService,paymentService);
+            var order = new FakeOrder(cart, paymentDetails, notificationService, reservationService, paymentService);   //Made fake order due to abstract class
 
             bool shouldnotifycustomer = false;
 
@@ -38,7 +39,7 @@ namespace HW4EX2B4.TightCoupling
             var paymentDetails = new PaymentDetails() { PaymentMethod = PaymentMethod.Cash };
 
             var cart = new Cart();
-            var order = new Order(cart, paymentDetails, notificationService, reservationService, paymentService);
+            var order = new FakeOrder(cart, paymentDetails, notificationService, reservationService, paymentService);   //Made fake order due to abstract class
 
             bool shouldnotifycustomer = true;
 
@@ -46,5 +47,55 @@ namespace HW4EX2B4.TightCoupling
 
             Assert.IsTrue(notificationService.wasCalled);
         }
+
+
+        [TestMethod]
+        public void ChargeCardNotFail() // Checks that ChargeCard method is being called
+        {
+            var paymentService = new FakePaymentProcessor();
+            var paymentDetails = new PaymentDetails() { PaymentMethod = PaymentMethod.Cash };
+
+            var cart = new Cart();
+            //var order = new FakeOrder(cart, paymentDetails, notificationService, reservationService, paymentService);   //Made fake order due to abstract class
+
+            decimal amount = 0;
+
+            paymentService.ChargeCard(paymentDetails, amount);
+
+            Assert.IsTrue(paymentService.wasCalled);
+        }
+
+
+            [TestMethod]
+            public void ChargeCashNotFail() // Checks that ChargeCash method is being called
+        {
+                var paymentService = new FakePaymentProcessor();
+                var paymentDetails = new PaymentDetails() { PaymentMethod = PaymentMethod.Cash };
+
+                var cart = new Cart();
+                //var order = new FakeOrder(cart, paymentDetails, notificationService, reservationService, paymentService);   //Made fake order due to abstract class
+
+                decimal amount = 0;
+
+                paymentService.ChargeCash(paymentDetails, amount);
+
+                Assert.IsTrue(paymentService.wasCalled);
+            }
+
+
+        [TestMethod]
+        public void ReserveInventoryNotFail()
+        {
+            var reservationService = new FakeReserveInventory();
+
+            var cart = new Cart();
+            //var order = new FakeOrder(cart, paymentDetails, notificationService, reservationService, paymentService);   //Made fake order due to abstract class
+
+
+            reservationService.ReserveInventory(cart);
+
+            Assert.IsTrue(reservationService.wasCalled);
+        }
+
     }
 }

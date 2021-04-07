@@ -1,27 +1,29 @@
-﻿using System;
+﻿using HW4EX2B4.TightCoupling.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HW4EX2B4.TightCoupling.Model
+namespace HW4EX2B4.TightCoupling.Fakes
 {
-    public class OnlineOrder : Order
+    public class FakeOrder
     {
+        private readonly Cart _cart;
         private readonly PaymentDetails _paymentDetails;
         private readonly INotifyCustomer _notifyCustomer;
         private readonly IReserveInventory _reserveInventory;
         private readonly IPaymentProcessor _paymentProcessor;
 
-
-
-        public OnlineOrder(PaymentDetails paymentDetails, INotifyCustomer notifyCustomer, IReserveInventory reserveInventory, IPaymentProcessor paymentProcessor)
+        public FakeOrder(Cart cart, PaymentDetails paymentDetails, INotifyCustomer notifyCustomer, IReserveInventory reserveInventory, IPaymentProcessor paymentProcessor)
         {
+            _cart = cart;
             _paymentDetails = paymentDetails;
             _notifyCustomer = notifyCustomer;
             _reserveInventory = reserveInventory;
             _paymentProcessor = paymentProcessor;
         }
+
 
 
         public void Checkout(bool notifyCustomer)
@@ -38,5 +40,6 @@ namespace HW4EX2B4.TightCoupling.Model
                 _notifyCustomer.NotifyCustomer(_cart);
             }
         }
+
     }
 }

@@ -31,5 +31,10 @@ namespace HW4EX2B4.TightCoupling.Model
                 }
             }
         }
+
+        public void ChargeCash(PaymentDetails paymentDetails, decimal amount)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

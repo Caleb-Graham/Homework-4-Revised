@@ -21,7 +21,7 @@
         }
 
 
-        public void Checkout()
+        public virtual void Checkout()
         {
             // log the order in the database
         }
@@ -47,7 +47,7 @@
 //{
 //    public abstract class Order
 //    {
-//        protected readonly Cart _cart;
+//        private readonly Cart _cart;
 //        private readonly PaymentDetails _paymentDetails;
 //        private readonly INotifyCustomer _notifyCustomer;
 //        private readonly IReserveInventory _reserveInventory;

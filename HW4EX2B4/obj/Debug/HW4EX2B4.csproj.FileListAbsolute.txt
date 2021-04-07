@@ -14,3 +14,11 @@ C:\Users\jbateman\OneDrive - Missouri State University\ITC466 SP21\Homework\HW4E
 C:\Users\jbateman\OneDrive - Missouri State University\ITC466 SP21\Homework\HW4EX2B4\obj\Debug\HW4EX2B4.csproj.CopyComplete
 C:\Users\jbateman\OneDrive - Missouri State University\ITC466 SP21\Homework\HW4EX2B4\obj\Debug\HW4EX2B4.dll
 C:\Users\jbateman\OneDrive - Missouri State University\ITC466 SP21\Homework\HW4EX2B4\obj\Debug\HW4EX2B4.pdb
+C:\Users\Caleb\source\repos\Homework-4\HW4EX2B4\bin\Debug\HW4EX2B4.dll
+C:\Users\Caleb\source\repos\Homework-4\HW4EX2B4\bin\Debug\HW4EX2B4.pdb
+C:\Users\Caleb\source\repos\Homework-4\HW4EX2B4\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Caleb\source\repos\Homework-4\HW4EX2B4\obj\Debug\HW4EX2B4.csprojAssemblyReference.cache
+C:\Users\Caleb\source\repos\Homework-4\HW4EX2B4\obj\Debug\HW4EX2B4.csproj.CoreCompileInputs.cache
+C:\Users\Caleb\source\repos\Homework-4\HW4EX2B4\obj\Debug\HW4EX2B4.csproj.CopyComplete
+C:\Users\Caleb\source\repos\Homework-4\HW4EX2B4\obj\Debug\HW4EX2B4.dll
+C:\Users\Caleb\source\repos\Homework-4\HW4EX2B4\obj\Debug\HW4EX2B4.pdb
