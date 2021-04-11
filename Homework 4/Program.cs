@@ -6,14 +6,14 @@ namespace HW4EX1
     {
         static void Main(string[] args)
         {
-            BurgerOrder order = new BurgerOrder();
-            FriesOrder orderF = new FriesOrder();
-            order.orderBurger(2);       // only want a burger only order
-            orderF.orderFries(0);            // throws an exception
+            var order = new BurgerOrderService();
+            //order.orderBurger(2);       // only want a burger only order
+            //order.orderFries(0);            // throws an exception
 
-            //order.OrderBurger(new BurgerOrder());
-            
-            //order.OrderFries(new FriesOrder());
+            order.OrderBurger(2);
+            order.OrderFries(0);
+
+
         }
 
     }
@@ -21,41 +21,48 @@ namespace HW4EX1
     
     public interface IOrderBurger
     {
-        void orderBurger(int quantity);
+        //void orderBurger(int quantity);
+        object orderBurger(int quantity);
     }
 
     public interface IOrderFries
     {
-        void orderFries(int fries);
+        //void orderFries(int fries);
+        object orderFries(int quantity);
     }
 
     public interface IOrderCombo
     {
-        void orderCombo(int quantity, int fries);
+        //void orderCombo(int quantity, int fries);
+        object orderCombo(int quantity);
+
     }
 
 
     public class BurgerOrder : IOrderBurger
     {
-        public void orderBurger(int quantity)
+        object IOrderBurger.orderBurger(int quantity)
         {
             Console.WriteLine($"Received order for {quantity} burgers");
+            return quantity;
         }
     }
 
     public class FriesOrder : IOrderFries
     {
-        public void orderFries(int fries)
+        public object orderFries(int quantity)
         {
-            throw new NotImplementedException("No fries in burger only order");
+            Console.WriteLine($"Received order for {quantity} burgers");
+            return quantity;
         }
     }
 
     public class ComboOrder : IOrderCombo
     {
-        public void orderCombo(int quantity, int fries)
+        public object orderCombo(int quantity)
         {
-            throw new NotImplementedException("No combo in burger only order");
+            Console.WriteLine($"Received order for {quantity} burgers");
+            return quantity;
         }
     }
 
