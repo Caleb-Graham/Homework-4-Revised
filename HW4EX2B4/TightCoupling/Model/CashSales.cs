@@ -10,8 +10,6 @@ namespace HW4EX2B4.TightCoupling.Model
     {
 
         private readonly PaymentDetails _paymentDetails;
-        private readonly INotifyCustomer _notifyCustomer;
-        private readonly IReserveInventory _reserveInventory;
         private readonly IPaymentProcessor _paymentProcessor;
 
 
