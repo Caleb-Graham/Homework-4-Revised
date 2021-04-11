@@ -22,26 +22,26 @@ namespace HW4EX1
     public interface IOrderBurger
     {
         //void orderBurger(int quantity);
-        object orderBurger(int quantity);
+        object orderBurger(object quantity);
     }
 
     public interface IOrderFries
     {
         //void orderFries(int fries);
-        object orderFries(int quantity);
+        object orderFries(object quantity);
     }
 
     public interface IOrderCombo
     {
         //void orderCombo(int quantity, int fries);
-        object orderCombo(int quantity);
+        object orderCombo(object quantity);
 
     }
 
 
     public class BurgerOrder : IOrderBurger
     {
-        object IOrderBurger.orderBurger(int quantity)
+        object IOrderBurger.orderBurger(object quantity)
         {
             Console.WriteLine($"Received order for {quantity} burgers");
             return quantity;
@@ -50,7 +50,7 @@ namespace HW4EX1
 
     public class FriesOrder : IOrderFries
     {
-        public object orderFries(int quantity)
+        public object orderFries(object quantity)
         {
             Console.WriteLine($"Received order for {quantity} burgers");
             return quantity;
@@ -59,7 +59,7 @@ namespace HW4EX1
 
     public class ComboOrder : IOrderCombo
     {
-        public object orderCombo(int quantity)
+        public object orderCombo(object quantity)
         {
             Console.WriteLine($"Received order for {quantity} burgers");
             return quantity;

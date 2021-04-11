@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Caleb\\source\\repos\\Homework-4\\Homework 4\\HW4EX1.csproj": {}
+    "C:\\Users\\11cal\\Visual Studio Projects\\repos\\Homework-4\\Homework 4\\HW4EX1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Caleb\\source\\repos\\Homework-4\\Homework 4\\HW4EX1.csproj": {
+    "C:\\Users\\11cal\\Visual Studio Projects\\repos\\Homework-4\\Homework 4\\HW4EX1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Caleb\\source\\repos\\Homework-4\\Homework 4\\HW4EX1.csproj",
+        "projectUniqueName": "C:\\Users\\11cal\\Visual Studio Projects\\repos\\Homework-4\\Homework 4\\HW4EX1.csproj",
         "projectName": "HW4EX1",
-        "projectPath": "C:\\Users\\Caleb\\source\\repos\\Homework-4\\Homework 4\\HW4EX1.csproj",
-        "packagesPath": "C:\\Users\\Caleb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Caleb\\source\\repos\\Homework-4\\Homework 4\\obj\\",
+        "projectPath": "C:\\Users\\11cal\\Visual Studio Projects\\repos\\Homework-4\\Homework 4\\HW4EX1.csproj",
+        "packagesPath": "C:\\Users\\11cal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\11cal\\Visual Studio Projects\\repos\\Homework-4\\Homework 4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Caleb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\11cal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

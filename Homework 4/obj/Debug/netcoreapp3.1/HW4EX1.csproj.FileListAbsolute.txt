@@ -11,3 +11,16 @@ C:\Users\Caleb\source\repos\Homework-4\Homework 4\obj\Debug\netcoreapp3.1\HW4EX1
 C:\Users\Caleb\source\repos\Homework-4\Homework 4\obj\Debug\netcoreapp3.1\HW4EX1.dll
 C:\Users\Caleb\source\repos\Homework-4\Homework 4\obj\Debug\netcoreapp3.1\HW4EX1.pdb
 C:\Users\Caleb\source\repos\Homework-4\Homework 4\obj\Debug\netcoreapp3.1\HW4EX1.genruntimeconfig.cache
+C:\Users\11cal\Visual Studio Projects\repos\Homework-4\Homework 4\bin\Debug\netcoreapp3.1\HW4EX1.exe
+C:\Users\11cal\Visual Studio Projects\repos\Homework-4\Homework 4\bin\Debug\netcoreapp3.1\HW4EX1.deps.json
+C:\Users\11cal\Visual Studio Projects\repos\Homework-4\Homework 4\bin\Debug\netcoreapp3.1\HW4EX1.runtimeconfig.json
+C:\Users\11cal\Visual Studio Projects\repos\Homework-4\Homework 4\bin\Debug\netcoreapp3.1\HW4EX1.runtimeconfig.dev.json
+C:\Users\11cal\Visual Studio Projects\repos\Homework-4\Homework 4\bin\Debug\netcoreapp3.1\HW4EX1.dll
+C:\Users\11cal\Visual Studio Projects\repos\Homework-4\Homework 4\bin\Debug\netcoreapp3.1\HW4EX1.pdb
+C:\Users\11cal\Visual Studio Projects\repos\Homework-4\Homework 4\obj\Debug\netcoreapp3.1\HW4EX1.csprojAssemblyReference.cache
+C:\Users\11cal\Visual Studio Projects\repos\Homework-4\Homework 4\obj\Debug\netcoreapp3.1\HW4EX1.AssemblyInfoInputs.cache
+C:\Users\11cal\Visual Studio Projects\repos\Homework-4\Homework 4\obj\Debug\netcoreapp3.1\HW4EX1.AssemblyInfo.cs
+C:\Users\11cal\Visual Studio Projects\repos\Homework-4\Homework 4\obj\Debug\netcoreapp3.1\HW4EX1.csproj.CoreCompileInputs.cache
+C:\Users\11cal\Visual Studio Projects\repos\Homework-4\Homework 4\obj\Debug\netcoreapp3.1\HW4EX1.dll
+C:\Users\11cal\Visual Studio Projects\repos\Homework-4\Homework 4\obj\Debug\netcoreapp3.1\HW4EX1.pdb
+C:\Users\11cal\Visual Studio Projects\repos\Homework-4\Homework 4\obj\Debug\netcoreapp3.1\HW4EX1.genruntimeconfig.cache
